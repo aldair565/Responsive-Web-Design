@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ableton Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container-title">
+        <img src="/img/abletonlive.svg" alt="ableton-logo">
+        <h1 id="title">Ableton Survey Form</h1>
+    </div>
+    <p id="description">Thanks for choosing us! We would like your opinion to upgrade our services.</p>
+    <form id="survey-form">
+        <fieldset>
+            <label id="name-label">Name: <input id="name" type="text" name="name" placeholder="John Doe" required></label>
+            <label id="email-label">Email: <input id="email" type="email" name="email" placeholder="johndoe@email.com" required></label>
+            <label id="number-label">Age: <input id="number" type="number" name="age" min="16" max="100" placeholder="16+"></label>
+            <p>Which edition do you use?</p>
+            <select name="edition" id="dropdown">
+                <option value="intro">Intro</option>
+                <option value="standard">Standard</option>
+                <option value="suite">Suite</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <p>Would you recommend Ableton Live to a friend?</p>
+            <label for="yes"><input type="radio" class="inline" name="user-recommend" value="yes"> Yes</label>
+            <label for="maybe"><input type="radio" class="inline" name="user-recommend" value="maybe"> Maybe</label>
+            <label for="no"><input type="radio" class="inline" name="user-recommend" value="no"> No</label>
+        </fieldset>
+        <fieldset>
+            <p>Which genre(s) do you work with?</p>
+            <label for="electronic"><input type="checkbox" class="inline" name="genre" value="electronic"> Electronic</label>
+            <label for="classical"><input type="checkbox" class="inline" name="genre" value="classical"> Classical</label>
+            <label for="pop"><input type="checkbox" class="inline" name="genre" value="pop"> Pop</label>
+            <label for="rock"><input type="checkbox" class="inline" name="genre" value="rock"> Rock</label>
+            <label for="hip-hop"><input type="checkbox" class="inline" name="genre" value="hip-hop"> Hip Hop</label>
+            <label for="alternative"><input type="checkbox" class="inline" name="genre" value="alternative"> Alternative</label>
+        </fieldset>
+        <fieldset>
+            <p>Additional comments: </p>
+            <textarea name="additional-comments" id="additional-comments" cols="30" rows="5"></textarea>
+        </fieldset>
+        <input id="submit" type="submit" value="Submit">
+    </form>
+</body>
+</html>
